@@ -1,0 +1,14 @@
+#!/bin/sh
+
+export USER_ID=$(id -u)
+export GROUP_ID=$(id -u)
+
+export APP_DIRECTORY=$(pwd)
+
+export DOCKER_BIN_DIRECTORY=${APP_DIRECTORY}/bin/docker
+export DOCKER_DIRECTORY=${APP_DIRECTORY}/docker
+export DOCKER_IMAGE_FOLDER="docker/images" # used in Dockerfiles as relative path to the context (APP_DIRECTORY)
+
+export MAGENTO_DIRECTORY=${APP_DIRECTORY}/magento
+
+export FRONTEND_DIRECTORY=${APP_DIRECTORY}/frontend
